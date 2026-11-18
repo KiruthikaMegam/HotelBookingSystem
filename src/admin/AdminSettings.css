@@ -1,0 +1,210 @@
+.admin-settings-page {
+  width: 100%;
+  animation: fadeIn 0.5s ease;
+}
+
+.settings-page-heading {
+  margin-bottom: 28px;
+}
+
+.settings-page-heading span {
+  color: #0d7775;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.settings-page-heading h1 {
+  color: #183b39;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  margin-top: 8px;
+}
+
+.settings-page-heading p {
+  color: #829491;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.settings-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  align-items: flex-start;
+}
+
+.settings-card {
+  flex: 1 1 350px;
+  min-width: 0;
+  background: white;
+  border: 1px solid #e8f0ee;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(24, 59, 57, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.settings-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(24, 59, 57, 0.08);
+}
+
+.settings-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #edf2f1;
+  margin-bottom: 22px;
+}
+
+.settings-icon {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaf7f5;
+  color: #0d7775;
+  border-radius: 10px;
+  font-size: 23px;
+}
+
+.settings-card-heading h2 {
+  font-size: 16px;
+  color: #183b39;
+}
+
+.settings-card-heading p {
+  color: #879693;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.settings-avatar {
+  width: 65px;
+  height: 65px;
+  background: #0d7775;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.settings-form-group {
+  margin-bottom: 18px;
+}
+
+.settings-form-group label {
+  display: block;
+  color: #425b57;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.settings-form-group input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #dce8e5;
+  border-radius: 7px;
+  padding: 0 13px;
+  outline: none;
+  color: #183b39;
+  font-size: 13px;
+  background: #fbfdfd;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.settings-form-group input:focus {
+  border-color: #0d7775;
+  box-shadow: 0 0 0 3px rgba(13, 119, 117, 0.09);
+}
+
+.settings-save-btn {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 7px;
+  background: #0d7775;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  transition: 0.3s;
+  margin-top: 5px;
+}
+
+.settings-save-btn:hover {
+  background: #183b39;
+  transform: translateY(-2px);
+}
+
+.settings-message,
+.settings-error {
+  padding: 13px 16px;
+  border-radius: 7px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.settings-message {
+  background: #e7f7ed;
+  color: #21834b;
+}
+
+.settings-error {
+  background: #fff0ef;
+  color: #c33c36;
+}
+
+.settings-danger-card {
+  flex: 1 1 100%;
+}
+
+.settings-session-text {
+  color: #829491;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.settings-logout-btn {
+  background: #fff0ef;
+  color: #c33c36;
+  border: 1px solid #f4d2d0;
+  border-radius: 7px;
+  padding: 12px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.settings-logout-btn:hover {
+  background: #d9534f;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .settings-page-heading h1 {
+    font-size: 25px;
+  }
+
+  .settings-card {
+    flex-basis: 100%;
+    padding: 19px;
+  }
+}
+
+/* Consistent settings page spacing and card presentation */
+.admin-settings-page{max-width:1380px;margin:0 auto;padding:12px 0 55px}
+.settings-page-heading{margin-bottom:30px}
+.settings-page-heading h1{font-size:clamp(28px,3vw,36px)}
+.settings-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:stretch}
+.settings-card{width:100%;min-width:0;border-radius:15px;padding:25px;box-shadow:0 7px 24px rgba(25,63,55,.045)}
+.settings-danger-card{grid-column:1/-1}
+@media(max-width:700px){.admin-settings-page{padding:5px 0 35px}.settings-layout{grid-template-columns:1fr}.settings-danger-card{grid-column:auto}.settings-card{padding:20px}}
