@@ -4,6 +4,7 @@ import { HotelProvider } from "./context/HotelContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProtectedCustomerRoute from "./components/ProtectedCustomerRoute";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/Home";
 import Rooms from "./pages/Rooms";
@@ -42,6 +43,7 @@ function App() {
   return (
     <HotelProvider>
       <div className="app">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<PublicLayout><Home /></PublicLayout>} />
           <Route path="/rooms" element={<PublicLayout><Rooms /></PublicLayout>} />
